@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import antitheftproject.android.cmpe277.antitheftproject.constant.Constant;
+import antitheftproject.android.cmpe277.antitheftproject.services.LocationService;
 import antitheftproject.android.cmpe277.antitheftproject.services.MyService;
 
 public class MainActivity extends AppCompatActivity {
@@ -38,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
         });
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction(Constant.NETWORK_INTENT);
+        intentFilter.addAction(Constant.LOCATION_SERVICE);
+        intentFilter.addAction(Constant.SERVICE_KILLED);
+        intentFilter.addAction(Constant.NO_LOCATION_SERVICE);
         broadcastReceiver = new MyBroadcastReceiver();
         registerReceiver(broadcastReceiver, intentFilter);
     }
@@ -85,14 +89,35 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private class MyBroadcastReceiver extends BroadcastReceiver {
-
         @Override
         public void onReceive(Context context, Intent intent) {
             if (intent.getAction().equals(Constant.NETWORK_INTENT)) {
                 Toast.makeText(context, "Network is detected", Toast.LENGTH_LONG).show();
+                Intent locService = new Intent(context, LocationService.class);
+                if(isMyServiceRunning(MyService.class)) {
+                    Log.i("My service ", " not stopped");
+                } else {
+                    Log.i("My  service ", " stopped");
+                }
+                context.startService(locService);
             } else if (intent.getAction().equals(Constant.SERVICE_KILLED)) {
+                Toast.makeText(context, "Service gets killed", Toast.LENGTH_LONG).show();
                 context.startService(new Intent(context, MyService.class));
+            } else if (intent.getAction().equals(Constant.LOCATION_SERVICE)) {
+                double lon = intent.getExtras().getDouble("longitude");
+                double lat = intent.getExtras().getDouble("latitude");
+                Toast.makeText(context, "Location is received " + lat + ", " + lon, Toast.LENGTH_LONG).show();
+                if(isMyServiceRunning(LocationService.class)) {
+                    Log.i("Location service ", " not stopped");
+                } else {
+                    Log.i("Location service ", " stopped");
+                }
+
+            } else if (intent.getAction().equals(Constant.NO_LOCATION_SERVICE)) {
+                Toast.makeText(context, "No location returned", Toast.LENGTH_LONG).show();
+                context.startService(new Intent(context, LocationService.class));
             }
+
         }
     }
 
