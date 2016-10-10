@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="antitheftproject.android.cmpe277.antitheftproject.PasscodeActivity">
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/showPasscodeText"
+     android:text="Passcode:"
+     android:layout_marginLeft="10dp"
+     android:layout_centerVertical="true"/>
+
+    <EditText
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:id="@+id/enteredPasscode"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="250dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/afterEnteringPasscodeButton"
+        android:text="Submit"
+        android:layout_below="@id/enteredPasscode"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>

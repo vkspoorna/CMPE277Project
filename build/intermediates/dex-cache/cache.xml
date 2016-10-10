@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\neha\AppData\Local\Android\sdk1\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_98d6f55dfbc2989389f8c8d616f7c77bb9c997e8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_9b3da5a75513adea799f4ad3e46ef1822060e097.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_b25ad657ebac31deccba20841ec7cdd6704f6b52.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_a6cf94d8e1f9cde335c9b2025ae812235cb16530.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_ebb0e0de2f48398c8a8e5e6afc985a516fa65049.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_95c61365f9cae0529bbcb2a4a24a7ba71548d69b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.2.1_4a4755bfbbea9d40396a9a86950eb4d4ae99d2a8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_696015e5dbe8fdefced66ac38a18059da7d8be48.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_1210d4164f509e82b71ddeabbe0e1d4d7c17c6c3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.2.1_f04724368660ba36ab2145c5184bb8694e9c6f87.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_d41b738eaf021fcc1c044137aad48ec472084ad0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_2cc7cda7afc07c0fc321def9dbad81d4b82dc7f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_2470bbe214a646d058de965f271192b5cac93903.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_db6515ab29fea01e77d95e1a4d3e3c9b37b24a1e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_b617b8af133f08e46c3894074faed69f3597ba05.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_09a8eca5d0b4da4b4e1a738c123a1e22bca3bb76.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\neha\AndroidStudioProjects\CMPE277Project\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_8230f1667b0b35e6abe5ab24932cc6e270ef60de.jar" />
+    </item>
+
+</items>
