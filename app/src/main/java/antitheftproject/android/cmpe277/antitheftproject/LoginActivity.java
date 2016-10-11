@@ -1,6 +1,7 @@
 package antitheftproject.android.cmpe277.antitheftproject;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -26,6 +27,7 @@ import java.io.Writer;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import antitheftproject.android.cmpe277.antitheftproject.api.SharedPreferenceAPI;
 import antitheftproject.android.cmpe277.antitheftproject.constant.Constant;
 
 public class LoginActivity extends AppCompatActivity {
@@ -151,7 +153,7 @@ public class LoginActivity extends AppCompatActivity {
                 int errorCode = parentObject.getInt("errorCode");
                 System.out.println(errorCode);
                 if (errorCode == 0) {
-                    Intent intentService = new Intent(LoginActivity.this, MainActivity.class);
+                    Intent intentService = new Intent(LoginActivity.this, ServiceActivity.class);
                     startActivity(intentService);
                 } else {
                     Toast.makeText(getApplicationContext(), "Invalid Username/ password, please try again", Toast.LENGTH_LONG).show();

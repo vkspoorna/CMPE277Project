@@ -35,7 +35,7 @@ public class LocationService extends Service {
                     Log.i(" Location Lat ", String.valueOf(currentLocation.getLatitude()));
                     Log.i(" Location Lon ", String.valueOf(currentLocation.getLongitude()));
                 } else {
-                    locServResponse.setAction(Constant.NO_LOCATION_SERVICE);
+                    //locServResponse.setAction(Constant.NO_LOCATION_SERVICE);
                     Log.i("Location return", "empty");
                 }
                 sendBroadcast(locServResponse);

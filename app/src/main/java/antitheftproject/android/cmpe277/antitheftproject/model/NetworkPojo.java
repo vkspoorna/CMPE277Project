@@ -2,7 +2,7 @@ package antitheftproject.android.cmpe277.antitheftproject.model;
 
 public class NetworkPojo {
     private int networkId;
-    private boolean isWifiNetwork;
+    private String isWifiNetwork;
     private String networkName;
     private String networkState;
 
@@ -22,11 +22,11 @@ public class NetworkPojo {
         this.networkName = networkName;
     }
 
-    public boolean isWifiNetwork() {
+    public String  getWifiNetwork() {
         return isWifiNetwork;
     }
 
-    public void setWifiNetwork(boolean wifiNetwork) {
+    public void setWifiNetwork(String wifiNetwork) {
         isWifiNetwork = wifiNetwork;
     }
 

@@ -1,5 +1,6 @@
 package antitheftproject.android.cmpe277.antitheftproject;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -25,12 +26,17 @@ import java.io.UnsupportedEncodingException;
 import java.io.Writer;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 
+import antitheftproject.android.cmpe277.antitheftproject.api.SharedPreferenceAPI;
 import antitheftproject.android.cmpe277.antitheftproject.constant.Constant;
 
 public class RegisterActivity extends AppCompatActivity {
     private static final String TAG = "Log";
     private final String registerUrl = Constant.url + "/users/register";
+    String userEmail = "";
+    String userPhone = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,8 +63,8 @@ public class RegisterActivity extends AppCompatActivity {
 
         String userName = userNameET.getText().toString();
         String userPwd = userPwdET.getText().toString();
-        String userEmail = userEmailET.getText().toString();
-        String userPhone = userPhoneET.getText().toString();
+        userEmail = userEmailET.getText().toString();
+        userPhone = userPhoneET.getText().toString();
 
         if(userPwd.length()<=6){
             Toast.makeText(getApplicationContext(), "Password should be of at least 7 characters", Toast.LENGTH_LONG).show(); // displaying message
@@ -80,13 +86,18 @@ public class RegisterActivity extends AppCompatActivity {
             }
 
             if (json.length() > 0) {
-                new RegisterTask().execute(String.valueOf(json));
+                new RegisterTask(this).execute(String.valueOf(json));
             }
         }
     }
 
     private class RegisterTask extends AsyncTask<String, String, String> {
 
+        Context ctx;
+
+        public RegisterTask(Context ctx) {
+            this.ctx = ctx;
+        }
         @Override
         protected String doInBackground(String... params) {
             HttpURLConnection conn = null;
@@ -149,10 +160,11 @@ public class RegisterActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
-            {
-
-                Toast.makeText(getApplicationContext(), "Successfully Registered , please log in "  , Toast.LENGTH_LONG).show();
-            }
+            Toast.makeText(getApplicationContext(), "Successfully Registered , please log in "  , Toast.LENGTH_LONG).show();
+            Map<String, String> data = new HashMap<>();
+            data.put("email", userEmail);
+            data.put("phone", userPhone);
+            SharedPreferenceAPI.storeSharedPreferences(getApplicationContext(), Constant.USER, data);
             Intent loginIntent = new Intent(RegisterActivity.this, LoginActivity.class);
             startActivity(loginIntent);
             finish();
