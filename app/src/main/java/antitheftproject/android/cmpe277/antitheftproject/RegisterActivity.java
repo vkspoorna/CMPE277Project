@@ -42,29 +42,21 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        //setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().hide();
     }
 
     public void register(View v) {
         EditText userNameET = (EditText) findViewById(R.id.registerNameET);
         EditText userPwdET = (EditText) findViewById(R.id.resgiterPwdET);
         EditText userEmailET = (EditText) findViewById(R.id.registerEmailET);
-        EditText userPhoneET = (EditText) findViewById(R.id.registerPhoneET);
+
 
         String userName = userNameET.getText().toString();
         String userPwd = userPwdET.getText().toString();
         userEmail = userEmailET.getText().toString();
-        userPhone = userPhoneET.getText().toString();
+
 
         if(userPwd.length()<=6){
             Toast.makeText(getApplicationContext(), "Password should be of at least 7 characters", Toast.LENGTH_LONG).show(); // displaying message
@@ -77,7 +69,7 @@ public class RegisterActivity extends AppCompatActivity {
         } else {
             JSONObject json = new JSONObject();
             try {
-                json.put("phoneNumber", userPhone);
+
                 json.put("password", userPwd);
                 json.put("email", userEmail);
                 json.put("userName", userName);
