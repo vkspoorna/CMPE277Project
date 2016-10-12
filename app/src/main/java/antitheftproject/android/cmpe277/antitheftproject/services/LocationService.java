@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import java.util.List;
 
+import antitheftproject.android.cmpe277.antitheftproject.api.UtilsAPI;
 import antitheftproject.android.cmpe277.antitheftproject.constant.Constant;
 
 public class LocationService extends Service {
@@ -29,8 +30,10 @@ public class LocationService extends Service {
                 Intent locServResponse = new Intent();
                 Location currentLocation = getCurrentLocation();
                 if (currentLocation != null) {
-                    locServResponse.putExtra("longitude", currentLocation.getLongitude());
-                    locServResponse.putExtra("latitude", currentLocation.getLatitude());
+                    String locationAddr = UtilsAPI.decodeGPSLocation(getApplicationContext(), currentLocation.getLongitude(), currentLocation.getLatitude());
+                    locServResponse.putExtra("location", locationAddr);
+                    //locServResponse.putExtra("longitude", currentLocation.getLongitude());
+                    //locServResponse.putExtra("latitude", currentLocation.getLatitude());
                     locServResponse.setAction(Constant.LOCATION_SERVICE);
                     Log.i(" Location Lat ", String.valueOf(currentLocation.getLatitude()));
                     Log.i(" Location Lon ", String.valueOf(currentLocation.getLongitude()));
@@ -63,7 +66,7 @@ public class LocationService extends Service {
             return null;
         } else {
             LocationManager mLocationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-            Criteria mCriteria = new Criteria();
+            //Criteria mCriteria = new Criteria();
             Location bestLocation = null;
             Location myCurrentLocation = null;
             List<String> providers = mLocationManager.getAllProviders();
